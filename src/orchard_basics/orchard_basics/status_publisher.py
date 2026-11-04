@@ -14,8 +14,11 @@ class StatusPublisher(Node):
             String, '/orchard_status', 10
         )
 
-        # Publish a message every second.
-        self.timer = self.create_timer(1.0, self.publish_status)
+        # Publishing interval in seconds.
+        self.declare_parameter('publish_interval', 1.0)
+        interval = self.get_parameter('publish_interval').value
+
+        self.timer = self.create_timer(interval, self.publish_status)
 
         # Count how many messages we have published.
         self.count = 0
