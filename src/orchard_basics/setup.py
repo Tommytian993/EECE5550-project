@@ -25,7 +25,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'hello_node = orchard_basics.hello_node:main'
+            'hello_node = orchard_basics.hello_node:main',
+            'status_publisher = orchard_basics.status_publisher:main',
+            'status_subscriber = orchard_basics.status_subscriber:main',
         ],
     },
 )
