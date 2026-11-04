@@ -3,42 +3,27 @@ from rclpy.node import Node
 from std_msgs.msg import String
 
 
-class StatusPublisher(Node):
+class StatusSubscriber(Node):
     def __init__(self):
-        # Initialize our publisher node.
-        super().__init__('status_publisher')
+        # Initialize our subscriber node.
+        super().__init__('status_subscriber')
 
-        # Create a publisher on the /orchard_status topic.
-        # The queue depth is 10.
-        self.publisher = self.create_publisher(
-            String, '/orchard_status', 10
+        # Subscribe to the /orchard_status topic.
+        self.subscription = self.create_subscription(
+            String,
+            '/orchard_status',
+            self.status_callback,
+            10
         )
 
-        # Publish a message every second.
-        self.timer = self.create_timer(1.0, self.publish_status)
-
-        # Count how many messages we have published.
-        self.count = 0
-
-    def publish_status(self):
-        # Create a message of type String.
-        msg = String()
-
-        # Set the message content.
-        msg.data = f'Orchard robot is running! Count: {self.count}'
-
-        # Send the message to the topic.
-        self.publisher.publish(msg)
-
-        # Print a log to the terminal.
-        self.get_logger().info(f'Publishing: {msg.data}')
-
-        self.count += 1
+    def status_callback(self, msg):
+        # This callback runs whenever a message arrives.
+        self.get_logger().info(f'Received: {msg.data}')
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = StatusPublisher()
+    node = StatusSubscriber()
 
     try:
         rclpy.spin(node)
@@ -52,3 +37,5 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+
