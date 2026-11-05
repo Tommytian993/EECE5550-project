@@ -29,6 +29,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'turtle_goal_controller = orchard_basics.turtle_goal_controller:main',
+            'turtle_controller = orchard_basics.turtle_controller:main',
             'hello_node = orchard_basics.hello_node:main',
             'readiness_client = orchard_basics.readiness_client:main',
             'readiness_server = orchard_basics.readiness_server:main',
