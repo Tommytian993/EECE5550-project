@@ -3,6 +3,7 @@
 build/
 install/
 log/
+bags/
 
 # Python cache files
 __pycache__/
