@@ -28,6 +28,7 @@ setup(
     entry_points={
         'console_scripts': [
             'hello_node = orchard_basics.hello_node:main',
+            'readiness_client = orchard_basics.readiness_client:main',
             'readiness_server = orchard_basics.readiness_server:main',
             'status_publisher = orchard_basics.status_publisher:main',
             'status_subscriber = orchard_basics.status_subscriber:main',
