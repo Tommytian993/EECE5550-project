@@ -4,6 +4,7 @@ from std_msgs.msg import String
 
 
 class StatusSubscriber(Node):
+
     def __init__(self):
         # Initialize our subscriber node.
         super().__init__('status_subscriber')
@@ -37,5 +38,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-

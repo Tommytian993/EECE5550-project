@@ -4,6 +4,7 @@ from rclpy.node import Node
 
 
 class HelloNode(Node):
+
     def __init__(self):
         # Initialize the node with a unique name.
         super().__init__('hello_node')

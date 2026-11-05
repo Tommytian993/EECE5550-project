@@ -4,6 +4,7 @@ from std_msgs.msg import String
 
 
 class StatusPublisher(Node):
+
     def __init__(self):
         # Initialize our publisher node.
         super().__init__('status_publisher')
