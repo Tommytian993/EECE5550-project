@@ -1,6 +1,7 @@
 """Launch the robot simulation and ROS-Gazebo bridge together."""
 
 from pathlib import Path
+from uuid import uuid4
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -19,6 +20,11 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument('gui', default_value='true'),
+        DeclareLaunchArgument(
+            'gz_partition', default_value='orchard_' + uuid4().hex[:8],
+            description='Gazebo transport partition for this simulation',
+        ),
+        SetEnvironmentVariable('GZ_PARTITION', LaunchConfiguration('gz_partition')),
 
         SetEnvironmentVariable(
             'GZ_SIM_RESOURCE_PATH',

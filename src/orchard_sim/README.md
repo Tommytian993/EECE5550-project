@@ -35,3 +35,7 @@ The robot keeps moving until a new command arrives. Stop after a second or two:
 ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist '{}'
 ros2 topic echo /odom --once
 ```
+
+Each launch uses an isolated Gazebo transport partition to avoid mixing scenes.
+Use ROS `/cmd_vel` for control. For direct `gz` debugging, launch with
+`gz_partition:=orchard_debug` and export `GZ_PARTITION=orchard_debug` in the debugging terminal.

@@ -16,10 +16,36 @@
     <include>
       <uri>model://ground</uri>
     </include>
+
     <include>
       <uri>model://tree_trunk</uri>
       <name>tree_01</name>
-      <pose>2 0 0 0 0 0</pose>
+      <pose>2 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://tree_trunk</uri>
+      <name>tree_02</name>
+      <pose>5 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://tree_trunk</uri>
+      <name>tree_03</name>
+      <pose>8 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://tree_trunk</uri>
+      <name>tree_04</name>
+      <pose>2 -2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://tree_trunk</uri>
+      <name>tree_05</name>
+      <pose>5 -2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://tree_trunk</uri>
+      <name>tree_06</name>
+      <pose>8 -2 0 0 0 0</pose>
     </include>
 
     <include>
