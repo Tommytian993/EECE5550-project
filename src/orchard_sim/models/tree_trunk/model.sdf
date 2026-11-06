@@ -24,6 +24,42 @@
           <diffuse>0.45 0.22 0.08 1</diffuse>
         </material>
       </visual>
+      <visual name="canopy_center">
+        <pose>0 0 0.95 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.6</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.12 0.42 0.10 1</ambient>
+          <diffuse>0.12 0.42 0.10 1</diffuse>
+        </material>
+      </visual>
+      <visual name="canopy_left">
+        <pose>-0.35 0 0.8 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.5</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.18 0.50 0.12 1</ambient>
+          <diffuse>0.18 0.50 0.12 1</diffuse>
+        </material>
+      </visual>
+      <visual name="canopy_right">
+        <pose>0.35 0 0.8 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.5</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.15 0.46 0.10 1</ambient>
+          <diffuse>0.15 0.46 0.10 1</diffuse>
+        </material>
+      </visual>
     </link>
   </model>
 </sdf>
