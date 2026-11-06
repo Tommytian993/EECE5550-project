@@ -60,6 +60,204 @@
           <diffuse>0.15 0.46 0.10 1</diffuse>
         </material>
       </visual>
+      <visual name="apple_01">
+        <pose>0 0.58 1.08 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.85 0.035 0.025 1</ambient>
+          <diffuse>0.85 0.035 0.025 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_01">
+        <pose>0 0.58 1.165 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_02">
+        <pose>0 -0.58 1.0 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.68 0.02 0.015 1</ambient>
+          <diffuse>0.68 0.02 0.015 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_02">
+        <pose>0 -0.58 1.085 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_03">
+        <pose>-0.65 0.4 0.82 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.85 0.035 0.025 1</ambient>
+          <diffuse>0.85 0.035 0.025 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_03">
+        <pose>-0.65 0.4 0.905 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_04">
+        <pose>-0.65 -0.4 0.82 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.68 0.02 0.015 1</ambient>
+          <diffuse>0.68 0.02 0.015 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_04">
+        <pose>-0.65 -0.4 0.905 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_05">
+        <pose>0.65 0.4 0.82 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.85 0.035 0.025 1</ambient>
+          <diffuse>0.85 0.035 0.025 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_05">
+        <pose>0.65 0.4 0.905 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_06">
+        <pose>0.65 -0.4 0.82 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.075</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0.68 0.02 0.015 1</ambient>
+          <diffuse>0.68 0.02 0.015 1</diffuse>
+        </material>
+      </visual>
+      <visual name="apple_stem_06">
+        <pose>0.65 -0.4 0.905 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>.009</radius>
+            <length>.055</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>.24 .12 .04 1</ambient>
+          <diffuse>.24 .12 .04 1</diffuse>
+        </material>
+      </visual>
+      <visual name="leaf_cluster_01">
+        <pose>-0.48 0.32 1.12 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.20</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>.25 .57 .12 1</ambient>
+          <diffuse>.25 .57 .12 1</diffuse>
+        </material>
+      </visual>
+      <visual name="leaf_cluster_02">
+        <pose>0.48 -0.32 1.12 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.20</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>.10 .34 .08 1</ambient>
+          <diffuse>.10 .34 .08 1</diffuse>
+        </material>
+      </visual>
+      <visual name="leaf_cluster_03">
+        <pose>0.15 0.38 1.38 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.20</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>.25 .57 .12 1</ambient>
+          <diffuse>.25 .57 .12 1</diffuse>
+        </material>
+      </visual>
+      <visual name="leaf_cluster_04">
+        <pose>-0.15 -0.38 1.38 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>.20</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>.10 .34 .08 1</ambient>
+          <diffuse>.10 .34 .08 1</diffuse>
+        </material>
+      </visual>
     </link>
   </model>
 </sdf>
