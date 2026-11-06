@@ -17,7 +17,9 @@
       <uri>model://ground</uri>
     </include>
     <include>
-      <uri>model://obstacle_0</uri>
+      <uri>model://tree_trunk</uri>
+      <name>tree_01</name>
+      <pose>2 0 0 0 0 0</pose>
     </include>
 
     <include>
