@@ -128,6 +128,36 @@
           </material>
         </visual>
       </link>
+
+      <joint name="left_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>left_wheel</child>
+        <pose relative_to="left_wheel">0 0 0 0 0 0</pose>
+        <axis>
+          <xyz expressed_in="__model__">0 1 0</xyz>
+          <limit>
+            <lower>-1e16</lower>
+            <upper>1e16</upper>
+            <effort>10</effort>
+            <velocity>30</velocity>
+          </limit>
+        </axis>
+      </joint>
+
+      <joint name="right_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>right_wheel</child>
+        <pose relative_to="right_wheel">0 0 0 0 0 0</pose>
+        <axis>
+          <xyz expressed_in="__model__">0 1 0</xyz>
+          <limit>
+            <lower>-1e16</lower>
+            <upper>1e16</upper>
+            <effort>10</effort>
+            <velocity>30</velocity>
+          </limit>
+        </axis>
+      </joint>
     </model>
   </world>
 </sdf>
