@@ -57,5 +57,31 @@
         </visual>
       </link>
     </model>
+
+    <model name="orchard_robot">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="base_link">
+        <pose>0 0 0.25 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.6 0.4 0.18</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.6 0.4 0.18</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.15 0.55 0.2 1</ambient>
+            <diffuse>0.15 0.55 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
   </world>
 </sdf>
