@@ -244,6 +244,23 @@
         <child>caster</child>
         <pose relative_to="caster">0 0 0 0 0 0</pose>
       </joint>
+
+      <plugin filename="gz-sim-diff-drive-system"
+              name="gz::sim::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+        <right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>0.5</wheel_separation>
+        <wheel_radius>0.12</wheel_radius>
+        <topic>/model/orchard_robot/cmd_vel</topic>
+        <odom_topic>/model/orchard_robot/odometry</odom_topic>
+        <odom_publish_frequency>30</odom_publish_frequency>
+        <max_linear_velocity>0.6</max_linear_velocity>
+        <min_linear_velocity>-0.6</min_linear_velocity>
+        <max_angular_velocity>1.5</max_angular_velocity>
+        <min_angular_velocity>-1.5</min_angular_velocity>
+        <max_linear_acceleration>1</max_linear_acceleration>
+        <min_linear_acceleration>-1</min_linear_acceleration>
+      </plugin>
     </model>
   </world>
 </sdf>
