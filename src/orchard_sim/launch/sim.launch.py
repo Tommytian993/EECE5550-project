@@ -49,4 +49,14 @@ def generate_launch_description():
             parameters=[{'config_file': str(share / 'config' / 'bridge.yaml')}],
             on_exit=Shutdown(reason='Bridge exited'),
         ),
+
+        Node(
+            package='tf2_ros', executable='static_transform_publisher',
+            name='base_link_tf', output='screen',
+            arguments=[
+                '--frame-id', 'base_footprint', '--child-frame-id', 'base_link',
+                '--z', '0.25',
+            ],
+            parameters=[{'use_sim_time': True}],
+        ),
     ])

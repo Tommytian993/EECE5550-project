@@ -16,3 +16,9 @@
   gz_type_name: gz.msgs.Clock
   direction: GZ_TO_ROS
   qos_profile: CLOCK
+
+- ros_topic_name: /tf
+  gz_topic_name: /model/orchard_robot/tf
+  ros_type_name: tf2_msgs/msg/TFMessage
+  gz_type_name: gz.msgs.Pose_V
+  direction: GZ_TO_ROS
