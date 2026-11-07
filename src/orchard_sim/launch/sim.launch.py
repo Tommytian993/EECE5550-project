@@ -43,7 +43,6 @@ def generate_launch_description():
             on_exit=Shutdown(reason='Gazebo exited'),
         ),
 
-        # 读取已有的两条映射：ROS 速度指令发给 Gazebo，里程计反向返回。
         Node(
             package='ros_gz_bridge', executable='parameter_bridge',
             name='orchard_bridge', output='screen',
